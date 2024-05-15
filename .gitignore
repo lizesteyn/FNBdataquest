@@ -1,0 +1,25 @@
+# Ignore virtual environment
+fnb/
+
+# Python bytecode files
+*.pyc
+__pycache__/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# Environment configuration files
+.env
+
+# Logs
+*.log
+
+# Compiled files
+*.dll
+*.exe
+*.out
+*.o
+
+# Dependency directories
+node_modules/
