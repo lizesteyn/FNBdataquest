@@ -1,0 +1,85 @@
+Each time, keep the best performing previous one.
+
+Experiemtn 1:
+-LightFM model without user or item features, with all interaction weights == 1, i.e purely collaborative filtering
+
+# Results:
+# Precision: train 0.3523
+# Precision: test 0.1304
+# Recall: train 0.9915
+# Recall: test 0.5801
+# AUC: train 1.0000
+# AUC: test 0.8632
+
+
+Experiemtn 2:
+Same as experiment 1, with DISPLAY interaction ==0 and other two == 1
+Results:
+Precision: train 0.3523
+Precision: test 0.1312
+Recall: train 0.9915
+Recall: test 0.5825
+AUC: train 1.0000
+AUC: test 0.8628
+
+
+Experiment 3:
+Changes weights to 0,1,2
+Results
+Precision: train 0.3523
+Precision: test 0.1314
+Recall: train 0.9915
+Recall: test 0.5845
+AUC: train 1.0000
+AUC: test 0.8641
+
+Experiemtn 4:
+Include user and item features but only the base ones:
+Precision: train 0.3251
+Precision: test 0.1413
+Recall: train 0.9587
+Recall: test 0.6200
+AUC: train 0.9960
+AUC: test 0.8884
+
+Experiemtn 5:
+Include user and item features - all that I've engineered
+Precision: train 0.2768
+Precision: test 0.1867
+Recall: train 0.8677
+Recall: test 0.8028
+AUC: train 0.9775
+AUC: test 0.9553
+
+Experiment 6:
+Normalise the averages to a range between 0 and 1, column wise:
+Results:
+Precision: train 0.3131
+Precision: test 0.1857
+Recall: train 0.9375
+Recall: test 0.7996
+AUC: train 0.9926
+AUC: test 0.9527
+
+Experiment 6:
+Normalise the averages to a range between 0 and 1, column wise, with averages based only on number of clicks and checkouts:
+Precision: train 0.3124
+Precision: test 0.1853
+Recall: train 0.9362
+Recall: test 0.7981
+AUC: train 0.9925
+AUC: test 0.9528
+
+Experiemnt 7:
+Inlcude the training weights in the model.fit call:
+Precision: train 0.2764
+Precision: test 0.1867
+Recall: train 0.8668
+Recall: test 0.8029
+AUC: train 0.9773
+AUC: test 0.9554
+
+
+
+
+

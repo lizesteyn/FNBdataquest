@@ -1,5 +1,6 @@
 # Ignore virtual environment
 fnb/
+venv/
 
 # Python bytecode files
 *.pyc
